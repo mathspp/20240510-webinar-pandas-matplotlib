@@ -9,4 +9,5 @@ repo = Repo(Path(__file__).parent)
 while True:
     repo.index.add("*")
     repo.index.commit("Auto sync commit")
+    repo.remote().push()
     sleep(60)
